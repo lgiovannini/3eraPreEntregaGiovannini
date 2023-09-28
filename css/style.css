@@ -91,8 +91,8 @@ nav a {
 }
 
 .dropdown-divider {
-    background-color: #333; /* Cambia el color de fondo */
-    height: 1px; /* Cambia la altura de la línea */
+    background-color: #333;
+    height: 1px; 
 }
 
 .dropdown-option:hover {
@@ -241,7 +241,7 @@ nav a {
 
 .contpadre {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tabla {
@@ -286,7 +286,8 @@ nav a {
     height: 50px;
 } 
 
-/*Form*/
+/* Contacto */
+
 
 .formtitle {
     padding-left: 30px;
@@ -296,8 +297,7 @@ nav a {
 .form-container {
     display: flex;
     flex-direction: column;
-    max-width: 400px; /* Ajusta el ancho máximo según tu diseño */
-    margin: 0 auto;
+    max-width: 900px; 
 }
 
 form div {
@@ -305,6 +305,10 @@ form div {
     max-width: 300px;
     padding: 10px;
     border-radius: 5px;
+}
+
+.form-group {
+    max-width: 500px;
 }
 
 .form-control {
@@ -324,22 +328,9 @@ form div {
     width: 100%;
 }
 
-.submit-button,
-.reset-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: black;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 30px;
-}
-
-.submit-button:hover,
-.reset-button:hover {
-    background-color: #0056b3;
+.btn-custom, .btn-secondary {
+    background-color: #bd9696;
+    font-weight: bold;
 }
 
 /* Footer*/

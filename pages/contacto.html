@@ -62,40 +62,41 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <section class="container-fluid">
                         <h3 class="formtitle">Formulario de contacto</h3>
                         <form action="procesar_formulario.php" method="post" class="form-container">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" class="form-control">
+                                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="apellido">Apellido</label>
-                                <input type="text" id="apellido" name="apellido" class="form-control">
+                                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-control">
+                                <input type="email" id="email" name="email" placeholder="correo@example.com" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" class="form-control" cols="30" rows="10"></textarea>
+                                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" class="form-control" cols="50" rows="10"></textarea>
                             </div>
                             <div class="button-group">
-                                <input type="submit" value="Enviar" class="btn btn-primary">
+                                <input type="submit" value="Enviar" class="btn btn-custom">
                                 <input type="reset" value="Limpiar" class="btn btn-secondary">
                             </div>
                         </form>
                     </section>
                 </div>
-                <div class="col-md-6">
-                    <section>
+                <div class="col-md-5">
+                    <section style="margin-top: 50%; background-image: image();">
                         <h4>Contactate con nosotros</h4>
-                        <p>Ante cualquier duda o consulta, te invitamos a ponerte en contacto con nuestro equipo vía redes sociales</p>
+                        <p>Ante cualquier duda o consulta, te invitamos a ponerte en contacto con nuestro equipo vía redes sociales.</p>
+                        <hr>
                         <h4>Horario de atención</h4>
-                        <p>Lunes a Viernes de 09:00 a 18:00 hs
-                            Sábados de 09:00 a 13:00 hs</p>
+                        <p>Lunes a Viernes de 09:00 a 18:00 hs.</p>
+                        <p>Sábados de 09:00 a 13:00 hs.</p>
                     </section>
                 </div>
             </div>
@@ -129,7 +130,7 @@
                 </ul>
             </nav>
             <p>&copy; 2023 Murih Indumentaria</p>
-            <a href="#arriba" class="irArriba"><ion-icon name="arrow-up-circle-outline"></ion-icon></a>            
+            <a href="#" class="irArriba"><ion-icon name="arrow-up-circle-outline"></ion-icon></a>            
         </div>
     </footer>
 
