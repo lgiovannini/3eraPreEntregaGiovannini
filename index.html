@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murih Indumentaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,15 +16,15 @@
             <h1>Murih</h1>
             <h2>Indumentaria</h2>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li class="dropdown">
-                        <a href="./pages/productos.html">Productos <img src="./images/chevron-down-outline.svg" alt="Dropdown Productos" style="width: 20px;"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#">Inicio</a></li>
+                    <li class="dropdown" style="font-weight: bold;">Productos
+                        <img src="./images/chevron-down-outline.svg" alt="Dropdown Productos" style="width: 20px;">
                         <ul class="dropdown-content">
                             <li><a href="./pages/productos.html" class="dropdown-option">Remeras</a></li>
                             <hr class="dropdown-divider">
@@ -45,8 +45,8 @@
                             <li><a href="./pages/productos.html#infantil" class="dropdown-option">Infantil</a></li>
                         </ul>
                     </li>
-                    <li><a href="./pages/informacion.html">Informacion</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a href="./pages/informacion.html">Informacion</a></li>
+                    <li class="nav-item"><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <div>
@@ -61,7 +61,7 @@
             <img src="./images/clothes-1839935_1920.jpg" alt="Foto principal de Inicio " class="heroimg">
             <a href="./pages/productos.html" class="herobutton">COMPRAR AHORA</a>
         </section>
-        <section>
+        <section class="img-container">
             <div class="imginicio">
                 <img src="./images/istockphoto-1058036480-1024x1024.jpg" alt="Ropa Masculina" class="imagenmasc">
                 <img src="./images/composicion-plana-ropa-verano-sobre-fondo-color_912214-5373.avif" alt="Ropa Femenina" class="imagenfem">

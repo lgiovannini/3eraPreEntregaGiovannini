@@ -37,7 +37,7 @@ h2 {
 }
 
 nav {
-    display: flex;  
+    display: flex;
 }
 
 nav ul {
@@ -118,7 +118,6 @@ nav a {
 .herobutton {
     position: relative;
     bottom: 100px;
-    left: 100px;
     background-color: #D0B5A1;
     color: #fff; 
     font-size: 30px;
@@ -126,6 +125,7 @@ nav a {
     border: none; 
     border-radius: 5px;
     cursor: pointer; 
+    margin: 100px;
 }
 
 .imginicio {
@@ -140,8 +140,8 @@ nav a {
 .imagenmasc, .imagenfem, .imagenniño {
     height: 500px;
     width: 33%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 20px;
     object-fit: cover; 
 }
@@ -150,7 +150,7 @@ nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -160,8 +160,6 @@ nav a {
     border-radius: 10px;
     padding: 5px 15px;
     color: black;
-    margin-left: 280px;
-    margin-right: 280px;
     text-decoration: none;
 }
 
@@ -378,6 +376,8 @@ footer div {
     padding: 10px 20px; 
     border: none; 
     border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .ropa {
@@ -392,12 +392,12 @@ footer div {
 .ropa article {
     border: 1px solid #ddd;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 15px;
     text-align: center;
 }
 
 .ropa article img {
-    height: 400px;
+    height: auto;
     max-width: 100%;
 }
 
@@ -406,10 +406,12 @@ footer div {
     color: black; 
     font-weight: bold;
     text-decoration: none;
-    padding: 10px 20px; 
+    padding: 5px 10px; 
     border: none; 
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 /* Pestaña Información*/
@@ -460,8 +462,31 @@ footer div {
 }
 
 /* Medias queries */
+@media screen and (min-width: 600px){
+    .ropa article img{
+        height: 400px;
+    }
+}
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 300px){
+    .herobutton{
+        margin: 25px;
+        padding: 5px 10px; 
+        font-size: 12px; 
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .herobutton{
+        margin: 50px;
+        padding: 10px 20px; 
+        font-size: 18px; 
+    }
+    
+}
+
+@media screen and (max-width: 600px){
     .grid-container {
         grid-template-areas: "banner banner"
                             "quienes-container quienes-container"
@@ -479,4 +504,39 @@ footer div {
         margin-top: 0;
         margin-left: auto;
     }
+    .dropdown-content {
+        display: none;
+    }
 }
+
+/* Media query para pantallas medianas (ejemplo: entre 576px y 992px) */
+@media (max-width: 992px) {
+    .imginicio {
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .imagenfem {
+        width: auto;
+    }
+    .imagenmasc {
+        width: auto;
+    }
+
+    .imagenniño {
+        width: auto;
+    }
+
+    .botonmasc,
+    .botonfem,
+    .botonniño {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .ropa {
+        flex-direction: column;
+    }
+}
+

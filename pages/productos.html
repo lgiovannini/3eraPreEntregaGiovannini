@@ -15,19 +15,46 @@
             <h1>Murih</h1>
             <h2>Indumentaria</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./informacion.html">Informacion</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown" style="font-weight: bold;">Productos
+                        <img src="../images/chevron-down-outline.svg" alt="Dropdown Productos" style="width: 20px;">
+                        <ul class="dropdown-content">
+                            <li><a href="./productos.html#" class="dropdown-option">Remeras</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#pantalones" class="dropdown-option">Pantalones</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#tops" class="dropdown-option">Tops</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#shorts" class="dropdown-option">Shorts</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#calzas" class="dropdown-option">Calzas</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#abrigos" class="dropdown-option">Abrigos</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#zapatillas" class="dropdown-option">Zapatillas</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#accesorios" class="dropdown-option">Accesorios</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a href="./productos.html#infantil" class="dropdown-option">Infantil</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./informacion.html">Informacion</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
             <div>
-                <a href=".carrito.html" >
+                <a href="./carrito.html" >
                     <img src="../images/cart-outline.svg" alt="Acceso a Carrito de Compras" class="header__carrito">
                 </a>
             </div>
+            </div>
         </nav>
+
     </header>
     <main>
         <div>
@@ -38,29 +65,16 @@
                       <li class="breadcrumb-item active" aria-current="page">Productos</li>
                     </ol>
                 </nav>
-                <nav style="align-items: center; margin-bottom: -16px;">
-                    <ul>
-                        <li><a href="">Remeras</a></li>
-                        <li><a href="">Pantalones</a></li>
-                        <li><a href="">Tops</a></li>
-                        <li><a href="">Shorts</a></li>
-                        <li><a href="">Calzas</a></li>
-                        <li><a href="">Abrigos</a></li>
-                        <li><a href="">Zapatillas</a></li>
-                        <li><a href="">Accesorios</a></li>
-                        <li><a href="">Infantil</a></li>
-                    </ul>
-                </nav>
             </section>
             <section class="ropa">
                 <h3 class="product-titles" id="Remeras">Remeras</h3>
-                <article>
+                <article class="producto">
                     <img src="../images/remera.jpg" alt="Remera Lotto">
                     <h4>Remera Lotto Hs May</h4>
                     <p>$7.999</p>
                     <p></p>
                 </article>
-                <article>
+                <article class="producto">
                     <img src="../images/remera1.jpeg" alt="Remera Topper">
                     <h4>Remera Topper Basica</h4>
                     <p>$6.799</p>
@@ -70,7 +84,7 @@
                     <h4>Remera Entrenamiento adidas Essentials</h4>
                     <p>$22.999</p>
                 </article>
-                <a href="#" class="vermas-button" id="pantalones">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="pantalones">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Pantalones</h3>
@@ -90,7 +104,7 @@
                     <h4>Pantalón Running adidas Own The Run Astro Hombre</h4>
                     <p>$46.999</p>
                 </article>
-                <a href="#" class="vermas-button" id="tops">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="tops">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Tops</h3>
@@ -110,7 +124,7 @@
                     <h4>Top Puma Mid Impact Fit</h4>
                     <p>$12.399</p>
                 </article>
-                <a href="#" class="vermas-button" id="shorts">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="shorts">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Shorts</h3>
@@ -130,7 +144,7 @@
                     <h4>Short Fútbol Nike Dri-Fit Academy Hombre</h4>
                     <p>$15.999</p>
                 </article>
-                <a href="#" class="vermas-button" id="calzas">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="calzas">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Calzas</h3>
@@ -150,7 +164,7 @@
                     <h4>Calza Urbana adidas Essentials Mujer</h4>
                     <p>$16.999</p>
                 </article>
-                <a href="#" class="vermas-button" id="abrigos">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="abrigos">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Abrigos</h3>
@@ -170,7 +184,7 @@
                     <h4>Campera Puma Ess Cb</h4>
                     <p>$42.759</p>
                 </article>
-                <a href="#" class="vermas-button" id="zapatillas">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="zapatillas">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Zapatillas</h3>
@@ -190,7 +204,7 @@
                     <h4>Zapatillas Puma Carina 2.0 Laser Cut Mujer</h4>
                     <p>$49.999</p>
                 </article>
-                <a href="#" class="vermas-button" id="infantil">VER MÁS..</a>
+                <a href="#" class="vermas-button" id="infantil">VER MÁS</a>
             </section>
             <section class="ropa">
                 <h3 class="product-titles">Infantil</h3>
@@ -210,7 +224,7 @@
                     <h4>Buzo Fila Animal</h4>
                     <p>$9.999</p>
                 </article>
-                <a href="#" class="vermas-button">VER MÁS..</a>
+                <a href="#" class="vermas-button">VER MÁS</a>
             </section>
         </div>
     </main>
