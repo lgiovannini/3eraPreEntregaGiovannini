@@ -40,8 +40,6 @@ nav {
     display: flex;
 }
 
-
-
 nav li {
     display: inline;
     font-size: 18px;
@@ -96,7 +94,7 @@ nav a {
 }
 
 
-/*Main*/
+/*Index*/
 
 .herocontainer {
     background-size: cover;
@@ -128,43 +126,31 @@ nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .imagenmasc, .imagenfem, .imagenniño {
     height: 500px;
-    width: 33%;
+    width: 33.33%;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 20px;
     object-fit: cover; 
 }
 
-.botonesinicio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 20px;
+.botonmasc, .botonfem, .botonniño {
+    background-color: #D0B5A1;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: black;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.botonmasc, .botonniño {
-    background-color: #D0B5A1;
-    border-radius: 10px;
-    padding: 5px 15px;
-    color: black;
-    text-decoration: none;
-}
-
-.botonfem {
-    background-color: #D0B5A1;
-    border-radius: 10px;
-    padding: 5px 15px;
-    color: black;
-    text-decoration: none;
+.botonniño {
+    margin-right: 10px;
 }
 
 .lastblockmain {
@@ -508,18 +494,23 @@ footer div {
 @media (max-width: 992px) {
     .imginicio {
         flex-direction: column;
-        align-items: center;   
     }
 
     .imagenfem {
         width: auto;
+        margin: 20px 0;
     }
     .imagenmasc {
         width: auto;
+        margin: 20px 0;
     }
 
     .imagenniño {
-        width: auto;
+        width: 100%;
+        margin: 20px;
+        margin-left: 5px;
+        margin-right: 10px;
+
     }
 }
 
