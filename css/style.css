@@ -222,6 +222,8 @@ nav a {
 .contpadre {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .tabla {
@@ -519,4 +521,5 @@ footer div {
         flex-direction: column;
     }
 }
+
 
