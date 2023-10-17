@@ -1,0 +1,49 @@
+.formtitle {
+  padding-left: $padding;
+  padding-top: $padding;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+
+form div {
+  margin-bottom: 20px;
+  max-width: 300px;
+  padding: $element-padding;
+  border-radius: 5px;
+}
+
+.form-group {
+  max-width: 500px;
+}
+
+.form-control {
+  width: 100%;
+  padding: $element-padding;
+  border: $border-bottom;
+  border-radius: $border-radius;
+  font-size: 16px;
+}
+
+.button-group {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.inputfield {
+  width: 100%;
+}
+
+.btn-custom, .btn-secondary {
+  background-color: $terciary-color;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    margin-bottom: -200px;
+  }
+}

@@ -1,0 +1,84 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas:
+      "banner banner"
+      "quienes-container preguntas-container";
+    height: 100%;
+  
+    .banner {
+      grid-area: banner;
+      background-image: url('../images/banner.webp');
+      background-size: cover;
+      color: $text-color;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+      line-height: 80px;
+    }
+  
+    .masdetalles {
+      background-color: $terciary-color;
+      color: $text-color;
+      text-decoration: none;
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 5px;
+    }
+  
+    .quienes-container {
+      background-color: $container-color;
+      grid-area: quienes-container;
+      padding: 10px;
+    }
+  
+    .preguntas-container {
+      background-color: $container-color;
+      grid-area: preguntas-container;
+      padding: 10px;
+    }
+
+    .estilotitulos {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 25px;
+    } 
+    .infolist {
+        padding-left: 50px;
+        padding-bottom: 200px;
+    }
+    
+    .infolorem {
+        padding: 20px;  
+      }
+    
+  }
+
+  @media screen and (max-width: 600px){
+    .grid-container {
+        grid-template-areas: "banner banner"
+                            "quienes-container quienes-container"
+                            "preguntas-container preguntas-container";
+        max-height: 50%;
+    }
+    .preguntas-container {
+      height: 350px;
+    }
+    .banner {
+        font-size: large;
+        text-align: center;
+    }
+    .header {
+        flex-direction: row;
+    }
+    .nav {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+  }
