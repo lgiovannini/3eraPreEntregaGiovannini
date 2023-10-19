@@ -145,23 +145,28 @@ footer div .irArriba {
 }
 .ropa article {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 20px;
   margin: 15px;
   text-align: center;
+  overflow: hidden;
 }
 .ropa article img {
   height: 100%;
   max-width: 100%;
+  transition: transform 0.4s;
 }
 .ropa article h4 {
   background-color: #D0B5A1;
   border-radius: 10px;
   padding: 7px;
-  margin: 7px;
+  margin-top: 10px;
 }
 .ropa article p {
   background-color: #e6ba99;
   border-radius: 30px;
+}
+.ropa img:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1740px) {
