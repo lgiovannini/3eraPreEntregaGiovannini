@@ -1,0 +1,34 @@
+//Color
+$primary-color: #f3eae7;
+$secondary-color: #D0B5A1;
+$terciary-color: #bd9696;
+$price-color:  #e6ba99;
+$text-color: black;
+$border-color: #333;
+$hover-color: #4b5055;
+$container-color: #ccc;
+
+//Fonts
+$primary-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-weight-bold: bold;
+$font-italic: italic;
+$h1-font-size: 60px;
+$h2-font-size: 22px;
+$nav-font-size: 18px;
+$font-size: 30px;
+
+//Design
+$li-margin: 30px;
+$border-radius: 5px;
+$border-bottom: 1px solid black;
+$article-border: 1px solid #ddd;
+$padding: 30px;
+$paddingcarrito: 25px;
+$element-padding: 10px;
+
+//Lists
+$flex-row-center-around: (flex, row, center, space-around);
+$flex-row-center-between: (flex, row, center, space-between);
+$button: (5px, $secondary-color, $text-color);
+$button-big: (20px, $secondary-color, pointer, 10px 50px);
+

@@ -1,0 +1,77 @@
+
+.herocontainer {
+  background-size: cover;
+  text-align: left;
+  height: 600px;
+  position: relative;
+  }
+.heroimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.herobutton {
+    position: relative;
+    bottom: 100px;
+    @include button-style;
+    @media screen and (max-width: 500px){
+      .herobutton{
+          margin: 50px;
+          padding: 10px 20px; 
+          font-size: 18px; 
+      }
+    }
+
+  }
+
+.imginicio {
+   @include flex-row-center-around($flex-row-center-around);
+   margin-top: 10px;
+   margin-bottom: 10px;
+   .imagenmasc, .imagenfem, .imageninfantil {
+    height: 500px;
+    width: 33.33%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+   }
+  .botonmasc, .botonfem, .botoninfantil {
+      background-color: $secondary-color;
+      @include button($button);
+      padding: 5px 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .botoninfantil {
+      margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .imagenmasc, .imagenfem, .imageninfantil {
+        display: flex;
+        flex-direction: column;
+        .imagenfem, .imagenmasc {
+            width: auto;
+            margin: 20px 0;
+          }
+          .imageninfantil {
+            width: 320px;
+            margin: 20px 0;
+          }
+    }
+  }
+
+.lastblockmain {
+  @include flex-row-center-around($flex-row-center-between);
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid $text-color;
+  .seguinosblockmain, .suscriblockmain {
+    margin: 30px;
+  }
+  .lastsubtitles {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

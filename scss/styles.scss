@@ -1,132 +1,13 @@
 @import "base";
 @import "general";
+@import "variables";
+@import "mixins";
+@import "index";
 @import "productos";
 @import "informacion";
 @import "contacto";
+@import "carrito";
+@import "404";
 
-//Index
-.herocontainer {
-  background-size: cover;
-  text-align: left;
-  height: 600px;
-  position: relative;
-  }
-.heroimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-.herobutton {
-    position: relative;
-    bottom: 100px;
-    @include button-style;
-    @media screen and (max-width: 500px){
-      .herobutton{
-          margin: 50px;
-          padding: 10px 20px; 
-          font-size: 18px; 
-      }
-    }
 
-  }
 
-  .imginicio {
-    @include flex-row-center-around($flex-row-center-around);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    .imagenmasc, .imagenfem, .imageninfantil {
-      height: 500px;
-      width: 33.33%;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 20px;
-      object-fit: cover;
-    }
-    .botonmasc, .botonfem, .botoninfantil {
-      background-color: $secondary-color;
-      @include button($button);
-      padding: 5px 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .botoninfantil {
-      margin-right: 10px;
-    }
-  
-    @media (max-width: 992px) {
-      flex-direction: column;
-  
-      .imagenfem, .imagenmasc {
-        width: auto;
-        margin: 20px 0;
-      }
-      .imageninfantil {
-        width: 320px;
-        margin: 20px 0;
-      }
- 
-    }
-  }
-
-.lastblockmain {
-  @include flex-row-center-around($flex-row-center-between);
-  text-align: center;
-  margin-bottom: 30px;
-  border: 1px solid $text-color;
-  .seguinosblockmain, .suscriblockmain {
-    margin: 30px;
-  }
-  .lastsubtitles {
-    padding-bottom: 10px;
-    text-align: center;
-  }
-}
-
-//Carrito
-
-.contpadre {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-}
-.carritotitles {
-  font-size: $font-size;
-  padding-top: 150px;
-  padding-bottom: $paddingcarrito;
-  padding-right: $padding;
-}
-.estilotitulos {
-  font-size: $font-size;
-  padding-top: 50px;
-  padding-left: $paddingcarrito;
-  padding-bottom: $paddingcarrito;
-} 
-.email {
-    font-size: 16px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid $text-color;
-  }
-  
-  .suscributton {
-    @include button-big($button-big);
-    font-weight: bold;
-    margin-top: 5px;
-    border: 1px solid $text-color;
-    margin-top: 10px;
-    &:hover {
-      background-color: $hover-color;
-    }
-  }
-
-  @media screen and (max-width: 600px){
-    .contpadre {
-      display: flex;
-      flex-direction: column; /* Cambiamos la dirección a columna para centrar verticalmente */
-      justify-content: center; /* Centramos verticalmente */
-      align-items: center; /* Centramos horizontalmente */
-      padding: 20px;
-    }
- }

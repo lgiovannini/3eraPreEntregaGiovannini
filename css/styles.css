@@ -314,6 +314,34 @@ form div {
     margin-bottom: -200px;
   }
 }
+.error-container {
+  margin: 10% auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.error-container h1 {
+  font-size: 2em;
+  color: #bd9696;
+}
+.error-container p {
+  font-size: 1.2em;
+}
+.error-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #D0B5A1; /* Color azul para el enlace */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.error-container a:hover {
+  background-color: #4b5055;
+}
+
 .herocontainer {
   background-size: cover;
   text-align: left;

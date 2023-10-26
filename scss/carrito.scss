@@ -1,0 +1,46 @@
+.contpadre {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+  }
+  .carritotitles {
+    font-size: $font-size;
+    padding-top: 150px;
+    padding-bottom: $paddingcarrito;
+    padding-right: $padding;
+  }
+  .estilotitulos {
+    font-size: $font-size;
+    padding-top: 50px;
+    padding-left: $paddingcarrito;
+    padding-bottom: $paddingcarrito;
+  } 
+  .email {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid $text-color;
+    }
+    
+    .suscributton {
+      @include button-big($button-big);
+      font-weight: bold;
+      margin-top: 5px;
+      border: 1px solid $text-color;
+      margin-top: 10px;
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .contpadre {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; 
+          align-items: center; 
+          padding: 20px;
+        }
+     }
+  

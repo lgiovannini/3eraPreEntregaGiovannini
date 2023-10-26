@@ -1,0 +1,54 @@
+//Mixins
+@mixin flex-row-center-between($flex-row-center-between) {
+    display: nth($flex-row-center-between, 1);
+    flex-direction: nth($flex-row-center-between, 2);
+    justify-content: nth($flex-row-center-between, 4);
+    align-items: nth($flex-row-center-between, 3);
+  }
+  @mixin flex-row-center-around($flex-row-center-around) {
+    display: nth($flex-row-center-around, 1);
+    flex-direction: nth($flex-row-center-around, 2);
+    justify-content: nth($flex-row-center-around, 3);
+    align-items: nth($flex-row-center-around, 3);
+  }
+  @mixin flex-styles($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+  }
+  @mixin button($button) {
+    border-radius: nth($button, 1);
+    background-color: nth($button, 2);
+    color: nth($button, 3);
+    
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  @mixin button-big($button-big) {
+    border-radius: nth($button-big, 1);
+    background-color: nth($button-big, 2);
+    cursor: nth($button-big, 3);
+    padding: nth($button-big, 4);
+    &:hover {
+      background-color: $hover-color;
+    }
+    }
+  @mixin link-styles {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: $font-weight-bold;
+  }
+  @mixin button-style {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    margin: 100px;
+    &:hover {
+      background-color: $hover-color;
+    }
+    }
+  
