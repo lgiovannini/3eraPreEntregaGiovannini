@@ -10,25 +10,26 @@
 }
 .ropa {
     @include flex-row-center-between ($flex-row-center-between);
-    margin: 30px;
+    margin: 20px;
     border-bottom: $border-bottom;
   
     article {
-      border: $article-border;
+      
       padding: 20px;
-      margin: 15px;
+      margin: 10px;
       text-align: center;
       overflow: hidden;
   
       img {
-        height: 100%;
-        max-width: 100%;
+        max-height: 300px;
+        max-width: 300px;
         transition: transform 0.4s;
+        border-radius: $border-radius;
       }
       
       h4 {
         background-color: $secondary-color;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 7px;
         margin-top: 10px;
       }
@@ -45,7 +46,7 @@
 
   }
   
-  @media screen and (max-width: 1740px) {
+  @media screen and (max-width: 1272px) {
     .ropa {
         flex-direction: column;
     }
@@ -54,12 +55,14 @@
     .ropa article img{
         height: 400px;
     }
+
   }
 .vermas-button {
     background-color: $terciary-color;
     @include button ($button);
     padding: 5px 15px;
     margin-bottom: 20px;
+    margin-right: 50px;
     text-decoration: none;
     font-weight: bold;
   }
